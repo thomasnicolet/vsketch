@@ -15,10 +15,11 @@ class RandomLinesSketch(vsketch.SketchClass):
     def draw(self, vsk: vsketch.Vsketch) -> None:
         vsk.size("a6")
         vsk.scale("cm")
-        margin = 1
         self.WIDTH -= self.MARGIN
         self.HEIGHT -= self.MARGIN
         TIMESTEP_INIT = 5
+        
+        
         if (int(self.WIDTH*self.STEP_MULTIPLIER) < 0):
             print(int(self.WIDTH*self.STEP_MULTIPLIER))
             
